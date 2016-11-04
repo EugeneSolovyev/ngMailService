@@ -1,0 +1,22 @@
+{
+  "user": [
+	{
+	  "name": "Eugene",
+	  "surname": "Solovyev",
+	  "avatarUrl": "https://pp.vk.me/c633619/v633619522/228c0/-E19w3P2mkQ.jpg",
+	  "id": 1
+	},
+	{
+	  "name": "Ann",
+	  "surname": "Shchyrets",
+	  "avatarUrl": "https://pp.vk.me/c626929/v626929171/2a8ec/DoHgDTWf-7o.jpg",
+	  "id": 2
+	},
+  	{
+	  "name": "Dmitriy",
+	  "surname": "Solovyev",
+	  "avatarUrl": "https://pp.vk.me/c837725/v837725529/96a/XnJKHMyeWyE.jpg",
+	  "id": 3
+	}
+  ]
+}

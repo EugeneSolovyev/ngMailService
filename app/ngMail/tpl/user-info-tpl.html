@@ -1,0 +1,28 @@
+<h3 class="check">Check user</h3>
+<div class="col-lg-6">
+	<div class="users" ng-repeat="user in userCtrl.users">
+		<div class="user-profile" ng-click="userCtrl.selectUser(user.id)">
+			<img ng-src="{{user.avatarUrl || 'http://links.guru/files/default.jpg'}}" alt="" class="img-circle">
+			<p>{{user.name}} {{user.surname}}</p>
+		</div>
+	</div>
+</div>
+<div class="user-table col-lg-6">
+	<h5 class="edit">Edit profile</h5>
+	<table class="table">
+		<tr>
+			<td>Name <button class="edit-btn"><i class="fa fa-pencil"></i></button></td>
+			<td>{{userCtrl.user.name}}</td>
+		</tr>
+		<tr>
+			<td>Surname <button class="edit-btn"><i class="fa fa-pencil"></i></button></td>
+			<td>{{userCtrl.user.surname}}</td>
+		</tr>
+		<tr>
+			<td>Photo <button class="edit-btn"><i class="fa fa-pencil"></i></button></td>
+			<td>
+				<img ng-src="{{userCtrl.user.avatarUrl}}" class="img-circle">
+			</td>
+		</tr>
+	</table>
+</div>

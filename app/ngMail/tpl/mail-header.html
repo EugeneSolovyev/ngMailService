@@ -1,0 +1,10 @@
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar-fixed-top bg-info text-white user-header">
+    <div class="user">
+        <img ng-src="{{userCtrl.user.avatarUrl || 'http://links.guru/files/default.jpg'}}" class="img-circle">
+        <h5>{{userCtrl.user.name || 'Not'}} {{userCtrl.user.surname || 'authorized'}}</h5>
+    </div>
+    <button type="button" class="user-menu" ng-click="showUser = true">
+        <i class="fa fa-bars fa-2x"></i>
+    </button>
+    <user-list ng-show="showUser" ng-click="showUser = false"></user-list>
+</div>

@@ -1,0 +1,23 @@
+<div class="input-group">
+    <div class="input-group-addon">Search:</div>
+    <input type="text" class="form-control" ng-model="day">
+</div>
+<table class="table col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <thead>
+        <th>Date:</th>
+        <th>From:</th>
+        <th>E-Mail:</th>
+        <th>Message:</th>
+    </thead>
+    <tr class="tr" ng-repeat="item in mCtrl.mail | filter: day as date">
+        <td>{{item.date}}</td>
+        <td>
+            <img ng-src="{{item.avatar || 'http://links.guru/files/default.jpg'}}" class="img-circle">
+        </td>
+        <td>{{item.email}}</td>
+        <td>{{item.msg}}</td>
+    </tr>
+</table>
+<div ng-if="!mCtrl.mail" style="width: 100%; text-align: center;">
+	<h2 style="margin: 32.2vh 0;">There are no letters</h2>
+</div>

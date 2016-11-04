@@ -1,0 +1,162 @@
+body {
+	overflow-x: hidden;
+}
+
+.user-header,
+.app-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 10%;
+    height: 5em;
+	box-shadow: 0 0 10px #000;
+}
+
+.user * {
+    display: inline-block;
+}
+
+.user-menu{
+    background-color: transparent;
+    border: none;
+    outline: 0 !important;
+    color: #fff;
+    cursor: pointer;
+}
+
+.img-circle {
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    border: 2px solid #fff;
+	outline: none;
+}
+
+button.img-circle {
+	margin-left: 1em;
+}
+
+.input-group {
+	margin-top: 5em !important;
+}
+
+.tr:nth-of-type(even) {
+    background-color: rgba(91, 192, 222, .5);
+}
+
+.input-group-addon,
+.form-control,
+.form-control:hover,
+.form-control:active {
+    background-color: rgba(120, 120, 120, .25) !important;
+    outline: none;
+    border: 0;
+    border-radius: 0;
+}
+
+.input-group-addon {
+    border-right: thin solid rgba(120, 120, 120, .8) !important;
+}
+
+.table {
+    margin-bottom: 0;
+    height: calc(100vh - 12.2em);
+}
+
+p {
+    margin: 0;
+}
+
+td:nth-of-type(3) {
+    cursor: pointer;
+}
+
+.hidden-box {
+	display: block;
+	background-color: rgba(91, 192, 222, .5);
+	position: absolute;
+	top: 80%;
+	left: 81.2%;
+	box-shadow: 3px 2px 15px #000;
+}
+
+.hidden-box::before {
+	content: '';
+	display: block;
+	border-top: 0px solid transparent;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #f0ad4e;
+	position: absolute;
+	top: -5px;
+	left: calc(50% - (5px / 2));
+}
+
+.user {
+	width: 100%;
+}
+.check {
+	margin: 0;
+	margin-top: 3.5em !important;
+	text-align: center;
+}
+
+.user-profile {
+	margin-top: 1em;
+	margin-right: 1em;
+	padding: 0 25%;
+}
+
+.usercard {
+	margin-top: 5em !important;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.info,
+.usertable {
+	height: 75vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ng-nav {
+	display: flex !important;
+	flex-direction: column;
+	padding: 1em;
+}
+
+.ng-nav a {
+	font-size: 1.2em;
+	color: #fff;
+	text-decoration: none;
+}
+
+.users {
+	width: 50%;
+	float: left;
+}
+
+.user-table {
+	margin-top: 1em;
+}
+
+.edit {
+	text-align: center;
+}
+
+.edit-btn,
+.edit-btn:hover,
+.edit-btn:focus {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: #5bc0de;
+	color: #fff;
+}
